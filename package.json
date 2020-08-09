@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Zadanie będzie polegało na stworzeniu gry \"Oczko\" w oparciu o język JavaScript, HTML, CSS oraz ogólnodostępne darmowe API https://deckofcardsapi.com/.",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.19"
+  },
+  "devDependencies": {
+    "css-loader": "^4.2.0",
+    "file-loader": "^6.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.profil-software.com/recruitment-july-2020/frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

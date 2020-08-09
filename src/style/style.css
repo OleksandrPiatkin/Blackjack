@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arimo", sans-serif;
+  background: linear-gradient(90deg, #020024 0%, #4f906f 0%, #20934b 100%);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 4% 0;
+}
+header h1 {
+  margin: 0;
+  padding: 0.05em 0.25em;
+  font-weight: normal;
+  color: #d2e9ded2;
+  border-top: 2px solid #d2e9ded2;
+  border-bottom: 2px solid #d2e9ded2;
+}
+
+h3 {
+  color: #d2e9ded2;
+  font-weight: normal;
+  text-align: center;
+}
+
+button {
+  font-weight: bold;
+  background-color: #d2e9ded2;
+  border: none;
+  color: #4f906f;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+}
+
+.btn-group button {
+  padding: 0.4em 0.7em;
+}
+
+.mode-choose-cover {
+  text-align: center;
+}
+
+.app-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-body .mode-wrap {
+  height: 5em;
+}
+.app-body .desk {
+  margin: 4% 0;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.app-body .hands {
+  position: relative;
+  margin-top: 10%;
+  display: flex;
+  width: 95%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hand {
+  position: relative;
+}
+.hand span {
+  position: absolute;
+  top: 2.5em;
+  left: 0;
+  color: #d2e9ded2;
+  padding: 5em 0;
+  margin-top: 2em;
+}
+.hand .btn-group {
+  position: absolute;
+  top: 11em;
+  left: 0;
+}
+
+.hand:first-child {
+  position: absolute;
+  transform: rotate(30deg);
+  left: 10%;
+  top: -80%;
+}
+
+.hand:nth-child(2) {
+  position: absolute;
+  transform: rotate(15deg);
+  left: 27%;
+  top: -20%;
+}
+
+.hand:nth-child(4) {
+  position: absolute;
+  transform: rotate(-15deg);
+  right: 27%;
+  top: -20%;
+}
+
+.hand:last-child {
+  position: absolute;
+  transform: rotate(-30deg);
+  right: 10%;
+  top: -80%;
+}
+
+.shuffle-desk,
+.desk-pile,
+.hand {
+  width: 6.3em;
+  border: 2px solid #d2e9ded2;
+  border-radius: 0.5em;
+  height: 8.7em;
+}
+
+.card-holder {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+.card-holder img {
+  position: absolute;
+  display: block;
+  width: inherit;
+}
+.card-holder img:nth-child(2) {
+  top: -15%;
+  right: -12%;
+  z-index: 2;
+}
+.card-holder img:nth-child(3) {
+  top: -30%;
+  right: -24%;
+  z-index: 3;
+}
+.card-holder img:nth-child(4) {
+  top: -45%;
+  right: -36%;
+  z-index: 4;
+}
+.card-holder img:nth-child(5) {
+  top: -60%;
+  right: -48%;
+  z-index: 5;
+}
+.card-holder img:nth-child(6) {
+  top: -75%;
+  right: -60%;
+  z-index: 6;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+  .hand span {
+    font-size: 0.85em;
+    top: 0.5em !important;
+    left: 0;
+    margin-top: 0;
+  }
+  .hand .btn-group {
+    padding: 0 !important;
+    top: 9em !important;
+    left: 0;
+  }
+  .hand .btn-group button {
+    padding: 0.1em 0.4em;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .shuffle-desk,
+.desk-pile,
+.hand {
+    width: 4.2em;
+    border: 2px solid #d2e9ded2;
+    border-radius: 0.32em;
+    height: 5.8em;
+  }
+
+  .hand span {
+    top: 2.5em;
+    left: 0;
+    padding: 5em 0;
+    margin-top: 2em;
+  }
+  .hand .btn-group {
+    top: 11em;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .shuffle-desk,
+.desk-pile,
+.hand {
+    width: 3.15em;
+    border: 1.5px solid #d2e9ded2;
+    border-radius: 0.25em;
+    height: 4.35em;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .shuffle-desk,
+.desk-pile,
+.hand {
+    width: 3.15em;
+    border: 1.5px solid #d2e9ded2;
+    border-radius: 0.25em;
+    height: 4.35em;
+  }
+}
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .hand:first-child {
+    transform: rotate(0deg);
+    left: 0;
+    top: 0;
+  }
+
+  .hand:nth-child(2) {
+    transform: rotate(0deg);
+    left: 20%;
+    top: 0;
+  }
+
+  .hand:nth-child(4) {
+    transform: rotate(0deg);
+    right: 20%;
+    top: 0;
+  }
+
+  .hand:last-child {
+    transform: rotate(0deg);
+    right: 0;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .shuffle-desk,
+.desk-pile,
+.hand {
+    width: 2.1em;
+    border: 1px solid #d2e9ded2;
+    border-radius: 0.15em;
+    height: 2.9em;
+  }
+}
