@@ -249,9 +249,6 @@ class Player {
     start() {
         this.showPlayerBtn();
         this.getCard(2);
-
-        // Promise.all([this.getCard(), this.getCard()])
-        // .then((responses) => responses.forEach(response callback(this.id - 1)));
     }
 
     getCardValue(card) {
