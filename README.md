@@ -1,7 +1,6 @@
 # Blackjack
 ## url: https://black-jack.pp.ua
-A project for summer internship at Profil Software.
-This is front-end part of the project.
+This is front-end side of task project.
 
 Blackjack(version "Oczko") with multiplayer and singleplayer modes.
 In single player you compete against the bot.
