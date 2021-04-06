@@ -1,6 +1,6 @@
 # Blackjack
-## url: https://black-jack.pp.ua
-This is front-end side of task project.
+
+This is front-end side of the project.
 
 Blackjack(version "Oczko") with multiplayer and singleplayer modes.
 In single player you compete against the bot.
